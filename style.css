@@ -1,0 +1,43 @@
+/* Fondo azul clarito */
+body {
+  background-color: #cfe8ff;  /* azul muy claro */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Recuadro del color */
+.color-box {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  border: 3px solid #333;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tarjeta contenedora */
+.card-custom {
+  background: #ffffff;   /* tarjeta blanca */
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs */
+input[type="range"] {
+  accent-color: #007bff;
+}
+
+input[type="number"] {
+  width: 80px;
+  text-align: center;
+}
+
+/* Código Hexadecimal */
+#hexCode {
+  font-size: 1.5rem;
+  color: #333;
+}

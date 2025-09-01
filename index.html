@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tonalidad RGB</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient d-flex align-items-center justify-content-center vh-100">
+
+  <div class="card shadow-lg border-0 rounded-4 p-4 w-75">
+    <h2 class="text-center mb-4 fw-bold text-primary">🎨 Selector de Colores RGB</h2>
+
+    <div class="row g-4 align-items-center">
+
+      <!-- Columna izquierda: color box -->
+      <div class="col-md-5 text-center">
+        <div id="colorBox" class="color-box mb-3 mx-auto"></div>
+
+        <h6 class="fw-bold text-secondary">Hexadecimal:</h6>
+        <p id="hexCode" class="fw-bold fs-5 text-dark">#000000</p>
+
+        <h6 class="fw-bold text-secondary">RGB:</h6>
+        <p id="rgbCode" class="fw-bold fs-6 text-dark">rgb(0, 0, 0)</p>
+
+        <!-- Picker -->
+        <label for="colorPicker" class="form-label fw-bold text-secondary">Selecciona un color</label>
+        <input type="color" id="colorPicker" class="form-control form-control-color mx-auto" 
+               value="#000000" style="width: 80px; height: 50px;">
+      </div>
+
+      <!-- Columna derecha: controles -->
+      <div class="col-md-7">
+        <div class="mb-3">
+          <label for="redRange" class="form-label fw-bold text-danger">Rojo</label>
+          <div class="d-flex align-items-center gap-2">
+            <input type="range" class="form-range flex-fill" id="redRange" min="0" max="255" value="0">
+            <input type="number" class="form-control w-25" id="redInput" min="0" max="255" value="0">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="greenRange" class="form-label fw-bold text-success">Verde</label>
+          <div class="d-flex align-items-center gap-2">
+            <input type="range" class="form-range flex-fill" id="greenRange" min="0" max="255" value="0">
+            <input type="number" class="form-control w-25" id="greenInput" min="0" max="255" value="0">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="blueRange" class="form-label fw-bold text-primary">Azul</label>
+          <div class="d-flex align-items-center gap-2">
+            <input type="range" class="form-range flex-fill" id="blueRange" min="0" max="255" value="0">
+            <input type="number" class="form-control w-25" id="blueInput" min="0" max="255" value="0">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
